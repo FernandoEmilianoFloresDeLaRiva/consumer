@@ -3,7 +3,7 @@ import amqp from "amqplib/callback_api";
 async function connect() {
   try {
     await amqp.connect(
-      "amqp://54.84.89.185",
+      "amqp://52.206.90.192",
       (err: any, conn: amqp.Connection) => {
         if (err) throw new Error(err);
         conn.createChannel((errChanel: any, channel: amqp.Channel) => {
