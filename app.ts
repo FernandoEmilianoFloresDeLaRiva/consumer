@@ -22,7 +22,7 @@ async function connect() {
                 headers,
                 body: JSON.stringify(parsedContent),
               };
-              fetch("http://localhost:8000/payment", body)
+              fetch("http://54.85.26.160:8000/payment", body)
                 .then(() => {
                   console.log("datos enviados");
                 })
